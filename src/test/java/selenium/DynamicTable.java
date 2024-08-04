@@ -17,7 +17,7 @@ public class DynamicTable {
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
 
 		WebDriver driver = new ChromeDriver();
-		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.manage().window().maximize();
 		driver.get("https://www.moneycontrol.com/stocks/marketstats/index.php");

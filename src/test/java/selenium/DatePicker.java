@@ -10,7 +10,7 @@ public class DatePicker {
 		String expected_date = "February 2024";
 		String expected_day = "24";
 		
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//BrowserDriver//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//browser-driver//chromedriver_127.exe");
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		
 		WebDriver driver = new ChromeDriver();

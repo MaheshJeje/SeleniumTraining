@@ -12,7 +12,7 @@ public class ReadPropertiesFile {
 
 	public static void main(String[] args) throws Exception {
 		Properties p = new Properties();
-		FileInputStream fis = new FileInputStream(".\\src\\test\\resources\\PropertiesFile\\testdata.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\input-files\\testdata.properties");
 		p.load(fis);
 		String url = p.getProperty("url");
 		System.out.println(url);
@@ -26,10 +26,12 @@ public class ReadPropertiesFile {
 		
 		Thread.sleep(2000);
 		String title = driver.getTitle();
+		String handle =	driver.getWindowHandle();
 		
 		Thread.sleep(2000);
-		FileOutputStream fos = new FileOutputStream(".\\src\\test\\resources\\PropertiesFile\\testdata.properties");
+		FileOutputStream fos = new FileOutputStream(System.getProperty("user.dir")+"\\input-files\\outputtestdata.properties");
 		p.setProperty("Title", title);
+		p.setProperty("Window-Handle", handle);
 		p.store(fos,"");
 		
 		

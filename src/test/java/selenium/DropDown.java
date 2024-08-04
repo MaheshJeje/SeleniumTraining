@@ -13,7 +13,7 @@ public class DropDown {
 
 	public static void main(String[] args) throws Exception {
 		//WebDriverManager.chromiumdriver().setup();
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//BrowserDriver//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//browser-driver//chromedriver_127.exe");
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		
 		WebDriver driver = new ChromeDriver();
