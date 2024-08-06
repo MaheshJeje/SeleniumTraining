@@ -1,76 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="1" total="8" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-05T10:12:47 IST" name="Default suite" finished-at="2024-08-05T10:12:48 IST" duration-ms="907">
+  <suite started-at="2024-08-06T13:27:58 IST" name="Functinal Suite" finished-at="2024-08-06T13:28:49 IST" duration-ms="50594">
     <groups>
     </groups>
-    <test started-at="2024-08-05T10:12:47 IST" name="Default test" finished-at="2024-08-05T10:12:48 IST" duration-ms="907">
-      <class name="datadriventesting.DataProvider1">
-        <test-method signature="testCaseData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:datadriventesting.DataProvider1@4be29ed9]" started-at="2024-08-05T10:12:48 IST" name="testCaseData" data-provider="driveTest" finished-at="2024-08-05T10:12:48 IST" duration-ms="16" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Hello]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Text]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-08-06T13:27:58 IST" name="Functional Test" finished-at="2024-08-06T13:28:49 IST" duration-ms="50594">
+      <class name="testNG.SSoftAssert">
+        <test-method signature="textSoftAssert()[pri:0, instance:testNG.SSoftAssert@196a42c3]" started-at="2024-08-06T13:28:21 IST" name="textSoftAssert" finished-at="2024-08-06T13:28:49 IST" duration-ms="27542" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCaseData -->
-        <test-method signature="testCaseData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:datadriventesting.DataProvider1@4be29ed9]" started-at="2024-08-05T10:12:48 IST" name="testCaseData" data-provider="driveTest" finished-at="2024-08-05T10:12:48 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Bye]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Message]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- textSoftAssert -->
+      </class> <!-- testNG.SSoftAssert -->
+      <class name="testNG.HardAssert">
+        <test-method signature="testTitle()[pri:0, instance:testNG.HardAssert@7161d8d1]" started-at="2024-08-06T13:27:58 IST" name="testTitle" finished-at="2024-08-06T13:28:21 IST" duration-ms="22986" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCaseData -->
-        <test-method signature="testCaseData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:datadriventesting.DataProvider1@4be29ed9]" started-at="2024-08-05T10:12:48 IST" name="testCaseData" data-provider="driveTest" finished-at="2024-08-05T10:12:48 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Solo]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Call]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testTitle -->
+      </class> <!-- testNG.HardAssert -->
+    </test> <!-- Functional Test -->
+  </suite> <!-- Functinal Suite -->
+  <suite started-at="2024-08-06T13:28:49 IST" name="Master Suite" finished-at="2024-08-06T13:28:49 IST" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- Master Suite -->
+  <suite started-at="2024-08-06T13:28:49 IST" name="Regression Suite" finished-at="2024-08-06T13:28:49 IST" duration-ms="31">
+    <groups>
+      <group name="Functional">
+        <method signature="TestNGStudy2.Test_1()[pri:1, instance:testNG.TestNGStudy2@480d3575]" name="Test_1" class="testNG.TestNGStudy2"/>
+        <method signature="TestNGStudy2.Test_2()[pri:2, instance:testNG.TestNGStudy2@480d3575]" name="Test_2" class="testNG.TestNGStudy2"/>
+        <method signature="TestNGStudy2.Test_3()[pri:3, instance:testNG.TestNGStudy2@480d3575]" name="Test_3" class="testNG.TestNGStudy2"/>
+      </group> <!-- Functional -->
+      <group name="Sanity">
+        <method signature="TestNGStudy2.Test_3()[pri:3, instance:testNG.TestNGStudy2@480d3575]" name="Test_3" class="testNG.TestNGStudy2"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="TestNGStudy1.Test_1()[pri:1, instance:testNG.TestNGStudy1@740fb309]" name="Test_1" class="testNG.TestNGStudy1"/>
+        <method signature="TestNGStudy2.Test_1()[pri:1, instance:testNG.TestNGStudy2@480d3575]" name="Test_1" class="testNG.TestNGStudy2"/>
+        <method signature="TestNGStudy1.Test_2()[pri:2, instance:testNG.TestNGStudy1@740fb309]" name="Test_2" class="testNG.TestNGStudy1"/>
+        <method signature="TestNGStudy2.Test_2()[pri:2, instance:testNG.TestNGStudy2@480d3575]" name="Test_2" class="testNG.TestNGStudy2"/>
+        <method signature="TestNGStudy2.Test_3()[pri:3, instance:testNG.TestNGStudy2@480d3575]" name="Test_3" class="testNG.TestNGStudy2"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2024-08-06T13:28:49 IST" name="Regression Test" finished-at="2024-08-06T13:28:49 IST" duration-ms="31">
+      <class name="testNG.TestNGStudy1">
+        <test-method is-config="true" signature="beforeGroup()[pri:0, instance:testNG.TestNGStudy1@740fb309]" started-at="2024-08-06T13:28:49 IST" name="beforeGroup" finished-at="2024-08-06T13:28:49 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCaseData -->
-      </class> <!-- datadriventesting.DataProvider1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- beforeGroup -->
+        <test-method signature="Test_1()[pri:1, instance:testNG.TestNGStudy1@740fb309]" started-at="2024-08-06T13:28:49 IST" name="Test_1" finished-at="2024-08-06T13:28:49 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_1 -->
+        <test-method signature="Test_2()[pri:2, instance:testNG.TestNGStudy1@740fb309]" started-at="2024-08-06T13:28:49 IST" name="Test_2" finished-at="2024-08-06T13:28:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_2 -->
+        <test-method is-config="true" signature="afterGroup()[pri:0, instance:testNG.TestNGStudy1@740fb309]" started-at="2024-08-06T13:28:49 IST" name="afterGroup" finished-at="2024-08-06T13:28:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterGroup -->
+      </class> <!-- testNG.TestNGStudy1 -->
+      <class name="testNG.TestNGStudy2">
+        <test-method signature="Test_1()[pri:1, instance:testNG.TestNGStudy2@480d3575]" started-at="2024-08-06T13:28:49 IST" name="Test_1" finished-at="2024-08-06T13:28:49 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_1 -->
+        <test-method signature="Test_2()[pri:2, instance:testNG.TestNGStudy2@480d3575]" started-at="2024-08-06T13:28:49 IST" name="Test_2" finished-at="2024-08-06T13:28:49 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_2 -->
+        <test-method signature="Test_3()[pri:3, instance:testNG.TestNGStudy2@480d3575]" started-at="2024-08-06T13:28:49 IST" name="Test_3" finished-at="2024-08-06T13:28:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_3 -->
+      </class> <!-- testNG.TestNGStudy2 -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- Regression Suite -->
 </testng-results>
