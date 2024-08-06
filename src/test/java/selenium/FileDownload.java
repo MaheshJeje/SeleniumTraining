@@ -1,19 +1,18 @@
 package selenium;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class FileDownloadAutoIt {
+public class FileDownload {
 
 	public static void main(String[] args) throws Exception {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//browser-driver//chromedriver_127.exe");
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new ChromeDriver();
 		Actions act = new Actions(driver);
 		
 		driver.manage().window().maximize();

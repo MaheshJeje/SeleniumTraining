@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.interactions.Actions;
 
-public class FileUploadAutoIT {
+public class FileUpload_AutoIT {
 
 	public static void main(String[] args) throws Exception {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//browser-driver//chromedriver_127.exe");
@@ -25,14 +25,13 @@ public class FileUploadAutoIT {
 		WebElement browserFile = driver.findElement(By.xpath("//*[@id='input-4']"));
 		
 		act.moveToElement(browserFile).click().build().perform();
+		Thread.sleep(3000);
 		
-		Runtime.getRuntime().exec(System.getProperty("user.dir")+"//InputFiles//FileUpload.exe");
+		Runtime.getRuntime().exec(System.getProperty("user.dir")+"//input-files//FileUpload.exe");
 		
 		
-		Thread.sleep(7000);
-		//driver.close();
-		
-
+		Thread.sleep(10000);
+		driver.close();
 	}
 
 }
