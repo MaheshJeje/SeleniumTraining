@@ -1,6 +1,6 @@
 Sleep(1000)
 ControlFocus("Open","","Edit1")
 Sleep(1000)
-ControlSetText("Open","","Edit1","C:\Users\Mahesh\git\repository\SeleniumTraining\input-files\FileUpload.exe")
+ControlSetText("Open","","Edit1","C:\Users\Mahesh\git\repository\SeleniumTraining\input-files\Dummy.txt")
 Sleep(1000)
 ControlClick("Open","","Button1")

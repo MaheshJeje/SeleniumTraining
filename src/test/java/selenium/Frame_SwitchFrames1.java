@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Frame_SwitchFrames1 {
 
 	public static void main(String[] args) throws Exception {
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//browser-driver//chromedriver_127.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//browser-driver//chromedriver.exe");
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		
 		WebDriver driver = new ChromeDriver();
