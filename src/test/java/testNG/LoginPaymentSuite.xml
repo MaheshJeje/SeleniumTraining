@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="TestNGSuite">
+	<listeners>
+		<listener class-name="TestNG.Listeners"></listener>
+	</listeners>
+	
+	<test name="Login And Payment Test">
+		<classes>
+			<class name ="TestNG.Login">
+				<methods>
+					<include name ="loginByEmail"/>
+					<include name ="loginByFacebook"/>	
+				</methods>
+			</class>	
+			
+			<class name ="TestNG.Payment">
+				<methods>
+					<exclude name ="paymentInDoller"/>
+					<include name ="paymentInRupees"/>	
+				</methods>
+			</class>	
+			
+			<class name ="TestNG.PaymentReturn">
+				<methods>
+					<include name ="paymentReturnByBank"/>	
+				</methods>
+			</class>
+			
+		</classes>
+	</test>
+</suite>				

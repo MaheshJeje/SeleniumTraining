@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="MasterSuite">
+	<suite-files>
+		<suite-file path = "C:\Users\Mahesh\eclipse-workspace\Selenium\src\test\java\TestNG\PaymentSuite.xml.xml"/>
+		<suite-file path = "C:\Users\Mahesh\eclipse-workspace\Selenium\src\test\java\TestNG\LoginPaymentSuite.xml"/>
+	</suite-files>
+</suite>				
